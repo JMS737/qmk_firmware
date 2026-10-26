@@ -36,13 +36,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define L_BASE 0
 #define L_EXTRA 1
 #define L_TAP 2
-#define L_MEDIA 3
-#define L_NAV 4
-#define L_MOUSE 5
-#define L_SYM 6
-#define L_NUM 7
-#define L_FUN 8
-#define L_BUTTON 9
+#define L_GAME 3
+#define L_MEDIA 4
+#define L_NAV 5
+#define L_MOUSE 6
+#define L_SYM 7
+#define L_NUM 8
+#define L_FUN 9
+#define L_BUTTON 10
+#define L_GAME_2 11
 
 #ifdef RGBLIGHT_ENABLE
     #define RGBLIGHT_EFFECT_BREATHING

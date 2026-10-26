@@ -66,6 +66,10 @@ static void render_logo(void) {
         case L_TAP:
             oled_write_P(PSTR(" tap"), false);
             break;
+        case L_GAME:
+        case L_GAME_2:
+            oled_write_P(PSTR("game"), false);
+            break;
         default:
             oled_write_P(PSTR("undef"), false);
             break;
@@ -92,7 +96,7 @@ static void render_layer_state(uint8_t const state) {
         0x20, 0xbd, 0xbe, 0xbf, 0x20,
         0x20, 0xdd, 0xde, 0xdf, 0x20, 0};
 
-    if      (state <= L_TAP) oled_write_P(base_layer, false);
+    if      (state <= L_GAME) oled_write_P(base_layer, false);
     else if (state <= L_MOUSE)  oled_write_P(numb_layer, false);
     else if (state <= L_FUN)  oled_write_P(symb_layer, false);
     else if (state == L_BUTTON) oled_write_P(func_layer, false);
