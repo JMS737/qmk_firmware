@@ -1,0 +1,16 @@
+RGBLIGHT_ENABLE = no
+RGB_MATRIX_ENABLE = yes
+VIA_ENABLE = no
+CAPS_WORD_ENABLE = yes
+MOUSEKEY_ENABLE = yes
+OLED_ENABLE = yes
+LAYER_LOCK_ENABLE = yes
+SRC += oled_bongocat.c oled_icons.c
+#SRC += oled_fletcher.c oled_icons.c
+LTO_ENALBE = yes
+#CONSOLE_ENABLE = no
+#COMMAND_ENABLE = no
+#EXTRAKEY_ENABLE = no # needed for audio keys
+SPACE_CADET_ENABLE = no
+GRAVE_ESC_ENABLE = no
+MAGIC_ENABLE = no
